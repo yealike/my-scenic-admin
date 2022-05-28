@@ -136,6 +136,22 @@ export const constantRoutes = [
       }
     ]
   },
+  // 用户管理
+  {
+    path: '/member',
+    component: Layout,
+    redirect: '/member/list',
+    name: '用户管理',
+    meta: { title: '用户管理', icon: 'el-icon-s-help' },
+    children: [
+      {
+        path: 'list',
+        name: '用户列表',
+        component: () => import('@/views/member/list'),
+        meta: { title: '用户列表', icon: 'table' }
+      }
+    ]
+  },
 
   {
     path: '/form',
