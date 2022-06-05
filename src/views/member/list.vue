@@ -37,6 +37,16 @@
     >
 
       <el-table-column
+
+        align="center"
+        prop="id"
+        width="100"
+        label="用户id"
+      >
+      </el-table-column>
+
+      <el-table-column
+        fixed
         align="center"
         prop="username"
         width="160"
@@ -137,6 +147,7 @@
       <el-table-column
         prop="intro"
         align="center"
+        width="180"
         label="简介"
       >
       </el-table-column>
@@ -158,6 +169,7 @@
       </el-table-column>
 
       <el-table-column
+        fixed="right"
         align="center"
         width="130"
         label="操作"
